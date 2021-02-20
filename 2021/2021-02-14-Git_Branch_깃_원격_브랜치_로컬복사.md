@@ -28,6 +28,9 @@ comments: true
 - `git checkout -b [생성할 branch 이름] --track [원격 저장소의 branch 이름]`
     - 원격 브랜치를 로컬에 이름을 바꾸어 복사하기
     - `--track` 옵션으로 원격 브랜치를 추적. 생략시 단순복사한다.
+    - 예시   
+        `git checkout -b testBranch --track origin/master`
+
     
 <hr/>
 
