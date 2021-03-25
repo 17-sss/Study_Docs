@@ -1,7 +1,7 @@
 ---
 title: 'Throttle와 Debounce'
 categories: [TIL, JavaScript]
-date: 2021-03-09 08:15:14 +0900
+date: 2021-03-09 08:15:10 +0900
 tags: [공부, 검색]
 comments: true
 ---
