@@ -6,20 +6,20 @@ tags: [공부, 검색]
 comments: true
 ---
 
-## Babel & Webpack ② : Webpack
+# Babel & Webpack ② : Webpack
 
-### **1.** Webpack 설치 
+## **1.** Webpack 설치 
 ```sh
 $ npm i --save-dev webpack webpack-cli
 ```
 
-### **2.** babel-loader 설치 
+## **2.** babel-loader 설치 
 Webpack이 모듈을 번들링할 때 Babel을 사용하여 ES6+ 코드를 ES5코드로 트랜스파일링하도록 `babel-loader` 설치
 ```sh
 $ npm i --save-dev babel-loader
 ```
 
-### **3.** webpack.config.js
+## **3.** webpack.config.js
 `webpack.config.js`은 Webpack이 실행될 때 참조하는 설정 파일      
 - 프로젝트 폴더 루트에 `webpack.config.js`를 생성
     ```js
@@ -74,7 +74,7 @@ $ npm i --save-dev babel-loader
     - 이 코드는 참고 자료(링크)와 **다른 코드**.   
         현재 package.json의 type에 module을 쓰고있기에 그에 따라 변경함.   
     
-### **4.** babel-polyfill   
+## **4.** babel-polyfill   
 Babel을 사용하여 ES6+ 코드를 ES5 이하로 트랜스파일링하여도 브라우저가 지원하지 않는 코드가 남아 있을 수 있음.   
 ES6에서 추가된 _Promise, Object.assign, Array.from_ 등은   
 ES5 이하로 트랜스파일링하여도 대체할 ES5 기능이 없기 때문에 그대로 남아 있다.  
@@ -107,7 +107,7 @@ $ npm i @babel/polyfill
     - 테스트 이미지 (webpack 사용)   
         <img src="https://user-images.githubusercontent.com/33610315/111125366-e525cf80-85b4-11eb-9e52-b302ef764c18.png" width="700">
 
-### **5.** Sass 컴파일
+## **5.** Sass 컴파일
 Webpack을 통해 Sass를 컴파일하는 방법?   
 - Sass를 컴파일한 결과물인 css를 bundle.js 파일에 포함시키는 방법과 별도의 css 파일로 분리하는 방법이 있음.
     

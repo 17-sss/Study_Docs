@@ -6,16 +6,16 @@ tags: [공부, 검색]
 comments: true
 ---
 
-## Babel & Webpack ① : Babel
+# Babel & Webpack ① : Babel
 
-### **1.** Babel CLI 설치
+## **1.** Babel CLI 설치
 
 -   `babel-core`, `babel-cli` 설치
     ```sh
     $ npm i --save-dev @babel/core @babel/cli
     ```
 
-### **2.** babelrc 설정 파일 작성
+## **2.** babelrc 설정 파일 작성
 
 -   env preset 설치
     ```sh
@@ -28,7 +28,7 @@ comments: true
     }
     ```
 
-### **3.** 트랜스파일링
+## **3.** 트랜스파일링
 - npm script를 사용하여 트랜스파일링
     ```json
     {
@@ -50,7 +50,7 @@ comments: true
                 (--out-dir 옵션의 축약형)
             ```
 
-### **4.** Babel 플러그인   
+## **4.** Babel 플러그인   
 - 클래스 필드 정의 제안 플러그인 (Babel 사이트에서 "Class field" 검색) 
     - 트랜스파일링 할 때 아래 예시 코드처럼 에러나는 부분이 있음.   
         그럴 경우 플러그인 검색해서 설치 후 해결          
@@ -111,7 +111,7 @@ comments: true
     }    
     ```
 
-### **5.** 브라우저 모듈 로딩 테스트
+## **5.** 브라우저 모듈 로딩 테스트
 - 모듈 기능은 node.js 환경에서 동작한 것이고 Babel이 모듈을 트랜스파일링한 것도      
     node.js가 기본 지원하는 CommonJS 방식의 module loading system에 따른 것임.
     ```js
