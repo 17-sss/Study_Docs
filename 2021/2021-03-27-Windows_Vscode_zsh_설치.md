@@ -1,6 +1,6 @@
 ---
 title: 'Windows에서 VSCODE에 ZSH 적용 (보류)'
-categories: [TIL, WSL, zsh]
+categories: [WSL, zsh]
 date: 2021-03-27 16:48:00 +0900
 tags: [공부, 검색]
 comments: true
