@@ -17,6 +17,7 @@
 -   quick sort는 pivot & partitioning  
      <img src="https://user-images.githubusercontent.com/33610315/118568519-f8226f00-b7b2-11eb-8513-25d6223d33df.png" width="400" />
 -   quick sort..?
+
     -   최소: _O(logN)_
     -   최대: _O(n)_
 
@@ -232,8 +233,9 @@
     ```
 
 ### **+** 기타 메모
-- 공부 할 것: `quickSort`, `슬라이딩 윈도우`, `투 포인터`, `Brute force (BF)`
-    - Brute force(BF): 노가다?
+
+-   공부 할 것: `quickSort`, `슬라이딩 윈도우`, `투 포인터`, `Brute force (BF)`
+    -   Brute force(BF): 노가다?
 
 ---
 

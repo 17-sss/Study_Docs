@@ -57,9 +57,9 @@ const merge = (intervals) => {
 
     ```js
     /**
-    * @param {number[]} nums
-    * @return {number}
-    */
+     * @param {number[]} nums
+     * @return {number}
+     */
     const findUnsortedSubarray = (nums) => {
         const originNums = nums.slice();
         nums.sort((a, b) => a - b);
@@ -85,9 +85,11 @@ const merge = (intervals) => {
         return result ? result + 1 : 0;
     };
     ```
-    - 너무 너무 느리다..
+
+    -   너무 너무 느리다..
         다른 방법이 있을 것 같은데, 그래프 그리다가 복잡해져서 그냥 보이는대로 풀이.  
-        다른 방법을 찾아보자!
+         다른 방법을 찾아보자!
+
 ---
 
 ### **참고 링크**

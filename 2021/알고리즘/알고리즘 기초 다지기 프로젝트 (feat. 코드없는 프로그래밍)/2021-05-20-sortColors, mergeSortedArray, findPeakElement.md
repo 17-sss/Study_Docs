@@ -186,8 +186,10 @@
 -   Peak Element??
     -   어떤 숫자가 그 이후 숫자보다 클 때 Element를 Peak라 정의하고 있음.
 -   이런 문제 풀 때 element를 기준으로 그래프 그려서 해결해보기!
-    -   예) `[1, 2, 3, 5, 4]`  
-         <img src="https://user-images.githubusercontent.com/33610315/118984764-c844b880-b9b8-11eb-8044-63b2173a9351.png" width="200">
+
+    -   예) `[1, 2, 3, 5, 4]`
+
+        <img src="https://user-images.githubusercontent.com/33610315/118984764-c844b880-b9b8-11eb-8044-63b2173a9351.png" width="200">
 
 **1) 코드**
 
