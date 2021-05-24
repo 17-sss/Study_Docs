@@ -51,6 +51,8 @@ const merge = (intervals) => {
 
 [문제: LeetCode - 581. Shortest Unsorted Continuous Subarray](https://leetcode.com/problems/shortest-unsorted-continuous-subarray/)
 
+- 정렬 안 된 연속적인 어레이의 길이를 구하는 문제.
+
 **코드**
 
 -   무식하게(?) 풀기
