@@ -1,6 +1,6 @@
 ## 알고리즘 기초 다지기 프로젝트 (feat. 코드없는 프로그래밍) [2021년 06월 18일]
 
-### Leetcode - Subarray Sum Equals K
+### **1.** Leetcode - Subarray Sum Equals K
 
 [문제: LeetCode - 560. Subarray Sum Equals K](https://leetcode.com/problems/subarray-sum-equals-k/)
 
@@ -12,10 +12,44 @@
 
 **코드**
 
--   코드 :
+-   코드 : 통과 성공
 
     ```js
+    /**
+     * @param {number[]} nums
+     * @param {number} k
+     * @return {number}
+     */
+    const subarraySum = (nums, k) => {
+        if (!nums || nums.length <= 0) return 0;
 
+        const cumulativeArr = [];
+        nums.reduce((sum, curr) => {
+            const currSum = sum + curr;
+            cumulativeArr.push(currSum);
+            return currSum;
+        }, 0);
+
+        const cumIndexesMap = new Map();
+        cumIndexesMap.set(0, [-1]);
+        let nLoop = 0,
+            result = 0;
+        while (nLoop < cumulativeArr.length) {
+            const currSum = cumulativeArr[nLoop];
+            const target = currSum - k;
+
+            if (cumIndexesMap.has(target))
+                result += cumIndexesMap.get(target).length;
+
+            if (cumIndexesMap.has(currSum)) {
+                const arrIdxValue = cumIndexesMap.get(currSum);
+                cumIndexesMap.set(currSum, [...arrIdxValue, nLoop]);
+            } else cumIndexesMap.set(currSum, [nLoop]);
+            nLoop++;
+        }
+
+        return result;
+    };
     ```
 
 ### **비슷한 문제**
