@@ -69,8 +69,8 @@
         이 두 값은, 현재 위치 `grid[y, x]` 를 기점으로 바로 위에 있는 값 (`value1`) 오른쪽에 있는 값 (`value2`)을 계산해준 것!
 
         ```js
-        const value1 = y ? grid[y - 1][x] : -1; // F(x, y-1)을 뜻함
-        const value2 = x ? grid[y][x - 1] : -1; // F(x-1, y)을 뜻함
+                    const value1 = y ? grid[y - 1][x] : -1; // F(x, y-1)을 뜻함
+                    const value2 = x ? grid[y][x - 1] : -1; // F(x-1, y)을 뜻함
         ```
 
     -   위에서 계산해준 `value1` & `value2`가 _`undefined`_ 일 경우가 있음  
