@@ -78,13 +78,19 @@
 
 **참고 이미지 및 동영상**
 
--   재귀  
+-   재귀
+
     <img src="https://user-images.githubusercontent.com/33610315/124852205-edc86880-dfde-11eb-901f-a56a32c0139d.png" width=500 />
+
 -   Bottom-Up
-    - 이미지  
-        <img src="https://user-images.githubusercontent.com/33610315/124852212-f15bef80-dfde-11eb-9351-5c1790c937e6.png" width=500/>
-    - 이미지 GIF (위 로직 😱 부분)  
-        <img src="https://user-images.githubusercontent.com/33610315/124868251-756fa080-dffa-11eb-8994-e236682d7c09.gif" width=400 />
+
+    -   이미지
+
+         <img src="https://user-images.githubusercontent.com/33610315/124852212-f15bef80-dfde-11eb-9351-5c1790c937e6.png" width=500/>
+
+    -   이미지 GIF (위 로직 😱 부분)
+
+         <img src="https://user-images.githubusercontent.com/33610315/124868251-756fa080-dffa-11eb-8994-e236682d7c09.gif" width=400 />
 
 ---
 
