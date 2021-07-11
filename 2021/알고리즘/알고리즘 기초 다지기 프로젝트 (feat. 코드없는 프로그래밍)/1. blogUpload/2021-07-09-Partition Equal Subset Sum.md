@@ -64,6 +64,10 @@
     canPartition([2, 1, 2, 3, 4]); // true
     ```
 
+**참고 이미지**
+
+<img width="400" src="https://user-images.githubusercontent.com/33610315/125018182-8c23ff00-e0af-11eb-8ffc-424f449174ea.png"/>
+
 **끄적끄적**
 
 -   계속 이해는 못하고 있지만, 오늘꺼는 조금 나았던 듯..
