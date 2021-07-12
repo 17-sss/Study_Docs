@@ -31,12 +31,14 @@
         for (let rowIdx = 1; rowIdx < arrDP.length; rowIdx++) {
             const prevRowIdx = rowIdx - 1;
             const prevRow = arrDP[prevRowIdx];
-            const currCoin = coins[rowIdx - 1]; // tmpColValue를 계산하기 위해서는 colIdx - rowIdx가 아닌 현재 코인만큼 빼줘야함!
+            // ▼ tmpColValue를 계산하기 위해서는 colIdx - rowIdx가 아닌 현재 코인만큼 빼줘야함!
+            const currCoin = coins[rowIdx - 1];
 
             for (let colIdx = 1; colIdx < amount + 1; colIdx++) {
                 const tmpColValue = arrDP[rowIdx][colIdx - currCoin];
                 const prevRowColValue = prevRow[colIdx];
-                arrDP[rowIdx][colIdx] = // 바로 이전 행의 colIdx에 있는 값과 현재 행의 "colIdx - 코인 값"에 있는 값을 합쳐주어 대입
+                // ▼ 바로 이전 행의 colIdx에 있는 값과 현재 행의 "colIdx - 코인 값"에 있는 값을 합쳐주어 대입
+                arrDP[rowIdx][colIdx] =
                     (typeof tmpColValue === 'undefined' || tmpColValue < 0
                         ? 0
                         : tmpColValue) + prevRowColValue;
@@ -46,12 +48,12 @@
         return arrDP[arrDP.length - 1][amount];
     };
 
-    change(5, [1, 2, 5]);   // 4
+    change(5, [1, 2, 5]); // 4
     ```
 
 **참고 이미지**
 
-<img width="400" src="https://user-images.githubusercontent.com/33610315/125220938-62aee180-e302-11eb-8bc7-ede3e08be1b2.png"/>
+<img width="500" src="https://user-images.githubusercontent.com/33610315/125220938-62aee180-e302-11eb-8bc7-ede3e08be1b2.png"/>
 
 **끄적끄적**
 
