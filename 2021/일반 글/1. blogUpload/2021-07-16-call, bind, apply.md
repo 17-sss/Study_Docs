@@ -37,8 +37,9 @@ person2.study.call(person1); // Son이/가 공부를 하고 있습니다.
 -   위 예시 코드를 보면 `call`을 이용하여 person2의 함수를 호출하지만  
     `call` 메소드 첫 번째 매개변수에 person1을 넣어주고 있기에 `this`는 person2가 아닌 person1을 가리키게 됨.
 
--   `call`의 첫 번째 매개변수 thisArg는 각 함수의 실행문맥의 `this`를 특정하게 지정하는 매개변수임.  
-     두 번째 매개변수부터는 호출할 함수의 인자들이 들어감.
+-   `call`의 첫 번째 매개변수 thisArg는 각 함수의 실행문맥의 `this`를 특정하게 지정하는 매개변수임.
+    -   두 번째 매개변수부터는 호출할 함수의 인자들이 들어감.
+    -   두번째 매개변수부터는 대상함수의 인수 **앞에** 삽입됨
 
     ❓ 두 번째 매개변수부터는 "호출할 함수의 인자들"을 사용한 예시 코드
 
@@ -103,6 +104,10 @@ fruitInfo.apply(fruit1, arrFruit1Info); // "사과은/는 2000원이며 빨간�
      차이점은 `call()` 은 함수에 전달될 인수 리스트를 받는데 비해,  
     `apply()` 는 인수들의 단일 배열을 받음
 
+> call과 apply를 좀 더 구분하자면..  
+> - `call`은 다른 관심사의 인자를 여러개 넣을 때  
+> - `apply`는 같은 관심사로 묶인 유사배열을 넣을 때  
+
 ## **[3]** `Function.prototype.bind()`
 
 `bind()`는 새롭게 바인딩한 함수를 만들고 바인딩한 함수는 원본 함수 객체를 감싸는 함수다.
@@ -126,21 +131,21 @@ let fruit1 = { name: '사과' };
 let fruit2 = {
     name: '바나나',
     fruitInfo: function (price, color) {
-        return console.log(
-            `${this.name}은/는 ${price}원이며 ${color}색입니다`,
-        );
+        return console.log(`${this.name}은/는 ${price}원이며 ${color}색입니다`);
     },
 };
 
 const arrFruit1Info = [4000, '빨간'];
 
 const appleInfo = fruit2.fruitInfo.bind(fruit1, ...arrFruit1Info);
-appleInfo();    // "사과은/는 4000원이며 빨간색입니다"
+appleInfo(); // "사과은/는 4000원이며 빨간색입니다"
 ```
+
 -   위에서 설명했듯 첫번째 매개변수엔 `thisArg`  
     두번째 매개변수는 타겟 함수에서 호출되어야 할 인수들.  
     `call`과 같이 두번째 매개변수는 **인수 목록**을 받음  
     (배열이 아닌 일반적인 값 입력. 배열을 두번째 매개변수로 주려면 전개연산자 활용)
+
 
 ---
 
