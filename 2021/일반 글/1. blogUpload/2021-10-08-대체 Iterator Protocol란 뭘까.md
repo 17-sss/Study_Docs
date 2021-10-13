@@ -196,8 +196,6 @@ for (const char of str) console.log(char);
 	<img src="https://user-images.githubusercontent.com/33610315/136513648-d59f22b0-0fe3-49d9-a9e0-a2fe00615001.png" width=600 />  
 </div>
 
-</div>
-
 이터러블을 지원하는 데이터 소비자는 내부에서 `Symbol.iterator`메소드를 호출해 이터레이터를 생성 →  
 이터레이터의 `next`메소드를 호출하여 이터러블을 순회 →  
 `next` 메소드가 반환한 이터레이터 리절트 객체의 `value` 프로퍼티 값을 취득한다.
