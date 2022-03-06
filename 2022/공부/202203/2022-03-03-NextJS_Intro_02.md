@@ -1,7 +1,7 @@
 ---
 date: '2022-03-03'
 title: '[Nomad Coders] NextJS 시작하기 - #1. FRAMEWORK OVERVIEW'
-categories: ['JavaScript', 'NextJS']
+categories: ['JavaScript', 'JS Framework']
 options: { hide: true }
 ---
 
